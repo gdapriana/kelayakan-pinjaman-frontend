@@ -1,4 +1,4 @@
-import {z} from "zod";
+import { z } from "zod";
 
 export const formSchema = z.object({
   name: z.string().min(2, {
@@ -24,7 +24,7 @@ export const formSchema = z.object({
     .string()
     .transform((val) => parseFloat(val)) // Convert string to a number
     .refine((val) => !isNaN(val) && val >= 0, { message: "Aset must be a positive number." }),
-})
+});
 
 export const backupSchema = z.object({
   name: z.string().min(2),
@@ -32,5 +32,5 @@ export const backupSchema = z.object({
   usia: z.string(),
   tanggungan: z.string(),
   pengeluaran: z.string(),
-  aset: z.string()
-})
+  aset: z.string(),
+});

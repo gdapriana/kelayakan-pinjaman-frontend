@@ -1,21 +1,11 @@
-import {Dataset} from "@/lib/utils";
-import {
-  Table,
-  TableBody,
-  TableCaption,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table"
-import {Badge} from "@/components/ui/badge";
-
+import { Dataset } from "@/lib/utils";
+import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { Badge } from "@/components/ui/badge";
 
 export default async function Page() {
-
   const dataset: Dataset = await fetch(`${process.env.NEXT_PUBLIC_SERVER}/dataset`)
     .then((response: Response) => response.json())
-    .then(dataset => dataset)
+    .then((dataset) => dataset);
 
   return (
     <main className="w-full md:h-full flex flex-col justify-start md:justify-center md:items-center items-stretch md:flex-row">
@@ -40,18 +30,30 @@ export default async function Page() {
             {dataset.dataset.map((data, index: number) => {
               return (
                 <TableRow key={index}>
-                  <TableCell><Badge variant="secondary">{data["pendapatan (jt/bln)"]}</Badge></TableCell>
-                  <TableCell><Badge variant="secondary">{data["usia (tahun)"]}</Badge></TableCell>
-                  <TableCell><Badge variant="secondary">{data["tanggungan (orang)"]}</Badge></TableCell>
-                  <TableCell><Badge variant="secondary">{data["pengeluaran (jt/bln)"]}</Badge></TableCell>
-                  <TableCell><Badge variant="secondary">{data["aset (juta)"]}</Badge></TableCell>
-                  <TableCell><Badge variant="default">{data.kelayakan}</Badge></TableCell>
+                  <TableCell>
+                    <Badge variant="secondary">{data["pendapatan (jt/bln)"]}</Badge>
+                  </TableCell>
+                  <TableCell>
+                    <Badge variant="secondary">{data["usia (tahun)"]}</Badge>
+                  </TableCell>
+                  <TableCell>
+                    <Badge variant="secondary">{data["tanggungan (orang)"]}</Badge>
+                  </TableCell>
+                  <TableCell>
+                    <Badge variant="secondary">{data["pengeluaran (jt/bln)"]}</Badge>
+                  </TableCell>
+                  <TableCell>
+                    <Badge variant="secondary">{data["aset (juta)"]}</Badge>
+                  </TableCell>
+                  <TableCell>
+                    <Badge variant="default">{data.kelayakan}</Badge>
+                  </TableCell>
                 </TableRow>
-              )
+              );
             })}
           </TableBody>
         </Table>
       </div>
     </main>
-  )
+  );
 }

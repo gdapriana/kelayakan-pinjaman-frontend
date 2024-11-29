@@ -1,9 +1,9 @@
-import { clsx, type ClassValue } from "clsx"
-import { twMerge } from "tailwind-merge"
-import {LucideIcon} from "lucide-react";
+import { clsx, type ClassValue } from "clsx";
+import { twMerge } from "tailwind-merge";
+import { LucideIcon } from "lucide-react";
 
 export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs))
+  return twMerge(clsx(inputs));
 }
 
 export interface Navigation {
@@ -19,19 +19,19 @@ export interface Member {
 }
 
 export interface Dataset {
-  dataset:     DatasetElement[];
+  dataset: DatasetElement[];
   false_label: number;
-  total:       number;
-  true_label:  number;
+  total: number;
+  true_label: number;
 }
 
 export interface DatasetElement {
-  "aset (juta)":          ASETJuta;
-  kelayakan:              Kelayakan;
-  "pendapatan (jt/bln)":  PenanJtBln;
+  "aset (juta)": ASETJuta;
+  kelayakan: Kelayakan;
+  "pendapatan (jt/bln)": PenanJtBln;
   "pengeluaran (jt/bln)": PenanJtBln;
-  "tanggungan (orang)":   ASETJuta;
-  "usia (tahun)":         UsiaTahun;
+  "tanggungan (orang)": ASETJuta;
+  "usia (tahun)": UsiaTahun;
 }
 
 export enum ASETJuta {
