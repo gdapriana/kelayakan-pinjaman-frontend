@@ -1,5 +1,7 @@
 # Loan Eligibility Frontend
 
+![web.png](public/web.png)
+
 ## 🏦 Project Overview
 
 A modern web application for loan eligibility prediction using Next.js, Tailwind CSS, and Shadcn/UI. This frontend interfaces with the backend to provide an intuitive loan assessment experience.
