@@ -8,9 +8,9 @@ A modern web application for loan eligibility prediction using Next.js, Tailwind
 
 ## 🔗 Project Links
 
-- **Frontend Live Demo:** [https://kelayakanpinjaman.vercel.app/](https://kelayakanpinjaman.vercel.app/)
-- **Backend Repository:** [https://github.com/gdapriana/kelayakan-pinjaman-backend](https://github.com/gdapriana/kelayakan-pinjaman-backend)
-- **Backend API:** [https://kelayakan-pinjaman-backend.vercel.app](https://kelayakan-pinjaman-backend.vercel.app)
+- **Frontend Live Demo:** [kelayakanpinjaman.vercel.app/](https://kelayakanpinjaman.vercel.app/)
+- **Backend Repository:** [github/gdapriana/kelayakan-pinjaman-backend](https://github.com/gdapriana/kelayakan-pinjaman-backend)
+- **Backend API:** [kelayakan-pinjaman-backend.vercel.app](https://kelayakan-pinjaman-backend.vercel.app)
 
 ## 🚀 Technologies Used
 
