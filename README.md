@@ -1,4 +1,4 @@
-# Loan Eligibility Frontend
+# Loan Worthiness Frontend
 
 ![web.png](public/web.png)
 
