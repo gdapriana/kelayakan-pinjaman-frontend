@@ -13,7 +13,6 @@ import { AlignJustify, CircleHelp, FlaskRound, HandCoins, Home, Table2Icon, User
 
 export const navigations: Navigation[] = [
   { name: "Predict", url: "/predict", icon: FlaskRound },
-  { name: "How it work", url: "/howitwork", icon: CircleHelp },
   { name: "Dataset", url: "/dataset", icon: Table2Icon },
   { name: "Member", url: "/member", icon: Users },
 ];
